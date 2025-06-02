@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Irfan Mubarak Portfolio</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -924,93 +925,196 @@ It discusses issues like exam scheduling, academic pressure, and system-level fl
 				</div>
 			</section>
 
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<a href="https://www.linkedin.com/in/irfan-mubarak-k/" target="_blank" rel="noopener noreferrer">
-											<i class="icon-linkedin22"></i>
-										</a>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://www.linkedin.com/in/irfan-mubarak-k/" target="_blank" rel="noopener noreferrer">
-											LinkedIn
-										</a></p>
-									</div>
-								</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfectly Aligned Contact Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<a href="https://github.com/irfanmubarak30" target="_blank" rel="noopener noreferrer">
-											<i class="icon-github"></i>
-										</a>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://github.com/irfanmubarak30" target="_blank" rel="noopener noreferrer">
-											GitHub
-										</a></p>
-									</div>
-								</div>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
 
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<a href="https://www.instagram.com/irfan_mubarak.k/" target="_blank" rel="noopener noreferrer">
-											<i class="icon-instagram"></i>
-										</a>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://www.instagram.com/irfan_mubarak.k/" target="_blank" rel="noopener noreferrer">
-											Instagram
-										</a></p>
-									</div>
-								</div>
+        .contact-section {
+            padding: 40px 20px;
+            background: #f8f9fa;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<a href="https://twitter.com/irfan_mubarakk" target="_blank" rel="noopener noreferrer">
-											<i class="icon-social-twitter"></i>
-										</a>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://twitter.com/irfan_mubarakk" target="_blank" rel="noopener noreferrer">
-											Twitter
-										</a></p>
-									</div>
-								</div>
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<a href="irfanmubarak.k30@gmail.com" target="_blank" rel="noopener noreferrer">
-											<i class="icon-mail"></i>
-										</a>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="irfanmubarak.k30@gmail.com" target="_blank" rel="noopener noreferrer">
-											irfanmubarak.k30@gmail.com
-										</a></p>
-									</div>
-								</div>
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+70123 54318</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
+        .section-subtitle {
+            color: #007bff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 18px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            min-height: 60px;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            background: #f0f8ff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .icon-box {
+            background: #007bff;
+        }
+
+        .icon {
+            font-size: 18px;
+            color: #007bff;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .icon {
+            color: white;
+        }
+
+        .contact-text {
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-item {
+                padding: 15px;
+                min-height: 55px;
+            }
+            
+            .icon-box {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+                margin-right: 12px;
+            }
+            
+            .icon {
+                font-size: 16px;
+            }
+            
+            .contact-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="section-header">
+            <span class="section-subtitle">Get in Touch</span>
+            <h2 class="section-title">Contact</h2>
+        </div>
+        
+        <div class="contact-grid">
+            <a href="https://www.linkedin.com/in/irfan-mubarak-k/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-linkedin-in icon"></i>
+                </div>
+                <div class="contact-text">LinkedIn</div>
+            </a>
+
+            <a href="https://github.com/irfanmubarak30" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-github icon"></i>
+                </div>
+                <div class="contact-text">GitHub</div>
+            </a>
+
+            <a href="https://www.instagram.com/irfan_mubarak.k/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-instagram icon"></i>
+                </div>
+                <div class="contact-text">Instagram</div>
+            </a>
+
+            <a href="https://twitter.com/irfan_mubarakk" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+                <div class="contact-text">Twitter</div>
+            </a>
+
+            <a href="mailto:irfanmubarak.k30@gmail.com" class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-envelope icon"></i>
+                </div>
+                <div class="contact-text">irfanmubarak.k30@gmail.com</div>
+            </a>
+
+            <a href="tel:+7012354318" class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-phone-alt icon"></i>
+                </div>
+                <div class="contact-text">+70123 54318</div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+</body>
+</html>
     <div class="row">
         <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-            <form id="contact-form" action="https://formspree.io/f/irfanmubarak.k30@gmail.com" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/xldnebja" method="POST">
                 <!-- Name Field -->
                 <div class="form-group">
                     <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -1073,4 +1177,3 @@ It discusses issues like exam scheduling, academic pressure, and system-level fl
 
 	</body>
 </html>
-
