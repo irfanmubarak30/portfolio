@@ -1,57 +1,55 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Irfan Mubarak Portfolio</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	 <link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Irfan Mubarak Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- N8N Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
 	<body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
@@ -1164,6 +1162,123 @@ It discusses issues like exam scheduling, academic pressure, and system-level fl
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+<!-- ILMORA AI Chat Widget -->
+    <div id="n8n-chat"></div>
+    
+    <!-- N8N Chat Widget Script -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            // REPLACE WITH YOUR ACTUAL WEBHOOK URL FROM N8N
+            webhookUrl: 'http://localhost:5678/webhook/d1371cca-6ae1-4529-bccf-fd9095758985/chat
+',
+            
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputPlaceholder: 'Ask me anything about ILMORA...',
+            chatWindowTitle: 'ILMORA AI Assistant',
+            
+            initialMessages: [
+                {
+                    text: 'Hello! I\'m the ILMORA AI Assistant. How can I help you learn about our AI innovation services today?',
+                    sender: 'bot'
+                }
+            ],
+            
+            theme: {
+                primaryColor: '#f9bf3f', // Matching your portfolio's yellow theme
+                textColor: '#1f2937',
+                backgroundColor: '#ffffff'
+            },
+            
+            defaultOpen: false,
+            showWelcomeScreen: true,
+            showWindowTitle: true
+        });
+    </script>
+    
+    <!-- Custom styling to match your portfolio -->
+    <style>
+        #n8n-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999; /* High z-index to appear above other elements */
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            #n8n-chat {
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+        
+        /* Custom styling to match your portfolio theme */
+        .chat-widget {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .chat-message.bot {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .chat-message.user {
+            background-color: #f9bf3f;
+            color: #333;
+            border-radius: 12px;
+        }
+        
+        .chat-input {
+            border-radius: 25px;
+            border: 2px solid #f9bf3f;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .chat-input:focus {
+            border-color: #e6a82e;
+            box-shadow: 0 0 0 0.2rem rgba(249, 191, 63, 0.25);
+        }
+        
+        .chat-send-button {
+            background-color: #f9bf3f;
+            border-radius: 50%;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .chat-send-button:hover {
+            background-color: #e6a82e;
+            transform: scale(1.05);
+        }
+        
+        .chat-window-title {
+            background-color: #f9bf3f;
+            color: #333;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+    </style>
+
+    <!-- Your existing JavaScript files go here -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
 
 	</body>
 </html>
