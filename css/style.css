@@ -1427,3 +1427,51 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+/* Responsive Adjustments for Mobile */
+@media screen and (max-width: 768px) {
+  .row {
+    display: block !important;
+  }
+  
+  .blog-entry {
+    margin-bottom: 2em;
+    width: 100% !important;
+  }
+
+  .project {
+    height: auto !important;
+    min-height: 400px !important;
+  }
+
+  .project .desc .con {
+    height: auto !important;
+    min-height: 400px !important;
+    padding: 15px;
+  }
+
+  .project .desc .con .icon {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project .desc .con .icon span {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .work-menu {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .work-menu span {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
